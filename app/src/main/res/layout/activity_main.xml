@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BILLIONAIRE WORLD"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/d8461fbb025f6347e7c8efcaa98ab7da" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        style="@android:style/Widget.AutoCompleteTextView"
+        android:layout_width="318dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:hint="PASSWORD:"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="472dp" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress3"
+        android:layout_width="319dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:hint="E-MAIL:"
+        android:inputType="textEmailAddress"
+        android:rotationX="0"
+        android:singleLine="true"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="405dp"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="102dp"
+        android:layout_height="56dp"
+        android:text="LOGIN"
+        app:backgroundTint="#1374C1"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="535dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
